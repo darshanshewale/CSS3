@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Borders</h1>
+    CSS border properties allow us to set style,color and width of the border.
+
+    <pre>
+        Different properties can be set for all the different borders i.e top border,right border,bottom border and left border.
+    </pre>
+
+    <h2>Border Style</h2>
+    <pre>
+        The border-style property specifies the type of border.None of the other border properties will work without setting the border style
+
+        Following are the types of borders:
+        @dotted- describes dottes border
+        @dashed - describes dashed border
+        @solid - describes solid border
+        @double - describes a double border
+        @groove - describes a 3D groooved border
+        @ridge -decribes a 3D ridge border
+        @inset - describes a 3D inset border
+        @outset - describes a 3D outset border
+        @none - it describes no border
+        @hidden - It describes the hidden border
+    </pre>
+
+    <style>
+        p.dotted
+        {
+            border-style: dotted;
+        }
+        p.dashed
+        {
+            border-style:dashed;
+        }
+        p.solid
+        {
+            border-style:solid;
+
+        }
+        p.double
+        {
+            border-style: double;
+        }
+        p.groove
+        {
+            border-style: groove;
+        }
+        p.ridge
+        {
+            border-style: ridge;
+        }
+
+    </style>
+
+    <p class="dotted">hello</p>
+    <p class="dashed">Coders</p>
+    <p class="solid">learn</p>
+    <p class="double">grow</p>
+    <p class="groove">keep it up</p>
+    <p class="ridge">Songs and coding is real bond</p>      
+
+    <h1>Border Width</h1>
+
+    <style>
+        p.width
+        {
+            border-style: solid;
+            border-width: 8px;
+        }
+    </style>
+
+   <p class="width"> Border width sets the width of the border. The width of the border can be in px,pt, cm or thin, medium and thick.
+   </p> 
+    
+   <h1>Border Color</h1>
+   <style>
+    pre.border_color
+    {
+        border-style: double;
+        border-width: 5px;
+        border-color: yellow;
+    }
+   </style>
+   <pre class="border_color">
+    This Property is used to set the color of the border . color can be set usign the color name,hex,value or RGB value.if
+   the color is not specifed border inherits the color of the element itself.
+   </pre>
+
+   <h1>Border Individual sides</h1>
+   <pre class="border_indi">
+    Using border property we can provide width,style and color to all the borders separately for that we have to give some values to all
+    sides of the border.
+   </pre>
+
+   <style>
+    p.top
+    {
+        border-top-style: dashed;
+    }
+    p.right
+    {
+        border-right-style: solid;
+    }
+    p.bottom
+    {
+        border-bottom-style: double;
+    }
+    p.left
+    {
+        border-left-style:solid
+    }
+    p.four_s
+    {
+        border-style: dashed dotted double groove;
+    }
+    p.three_s
+    {
+        border-style: solid dashed dotted  ;
+    }
+    p.two_s
+    {
+        border-style: dotted solid;
+    }
+
+    p.one_s
+    {
+        border-style: solid;
+    }
+   </style>
+   <p class="top">CSS styling </p>
+   <p class="right">Right</p>
+   <p class="bottom">Bottom</p>
+   <p class="left">left</p>
+
+   <p class="four_s">All Sides</p>
+   <p class="three_s">Three Sides</p>
+   <p class="two_s">Two Sides</p>
+   <p class="one_s">One Sides</p>
+
+   <h1>Border radius Property</h1>
+
+   <style>
+    p.radius
+    {
+        border-style: solid;
+        border-color: purple;
+        border-width: 5px;
+        border-radius: 20px;
+    }
+
+   </style>  
+   <p class="radius">It is used to round the corner of the border that looks more attractive</p>
+
+
+
+
+  
+    
+
+
+    
+</body>
+</html>

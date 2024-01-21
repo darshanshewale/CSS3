@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS colors</h1>
+    <pre>
+        CSS Colors is used to set the colors of the HTML elememnts. this property is used to set font, colors,background colors etc
+        Thw color of an element can be defined in the following ways:
+        @Built-In color
+        @RGB Format
+        @RGBA Format
+        @Hexadecimal Notation
+        @HSL
+        @HSLA
+    </pre>
+
+    a)<b>Built-In-Color</b>:these are set of predefined colors while are used by its name
+  
+        <style>
+            h1{
+                color: red;
+            }
+        </style>
+           </code>   
+
+    <br>
+
+    b)<b>RGB Format</b>:The RGB(red,Blue,Green)Format is used to define the color of an HTML element by specifying the RGB values range between 
+    0 to 255 e.g Red(255,0,0)
+
+    <style>
+        h1
+        {
+            color: rgb(red, green, blue);
+        }
+    </style>
+
+    <br>
+
+    c)<b>RGBA Format</b>The RGBA Format is simlar to the RGB bu the difference is RGBA contains A(Alpha)which specifies the transparency of elements.
+    The value of alpha lies between 0.0 to 1.0 where 0.0 reprsents fully transparent and 1.0 reprsents not transparent.
+    
+    <style>
+        h1{
+            color: rgba(0,255,0,0.5);
+        }
+    </style>
+
+    <br>
+
+    d)<b>Hexadecimal Notation:</b>The hexadecimal Notation begins with # symbol followed by 6 chracter each ranging from 0 to F for 
+    example : red #FF0000,Green #00FF00 , Blue #0000FF etc
+
+    <style>
+        h1{
+            color: #FF0000;
+        }
+    </style>
+
+    <br>
+    E)<b>HSL</b>HSL Stand for Hue,Saturation and Lightness respectively. This Format uses the cylindrical coordinate system.
+    <pre>
+    @Hue is the degree of the color wheel its value lies between 0 to 360 where 0 represents red ,120 represents green and 240 represents blue colors
+    @Saturation: It takes percentage value, where 100% represents completely saturated,while 0% reprsents completely unsaturated(gray).
+    @Lightness: Itr takes percentage value where 100% reprsents white, while 0% represents black.
+
+    <style>
+        h1
+        {
+            color: hsl(0, 50%,50%);
+        }
+    </style>
+    
+    </pre>
+
+    <br>
+
+    F)<b>HSLA</b>The HSLA color property is similar to HSL  property, but the difference is HSLA contains A(Alpha)which Specifies
+    the transparency of elements. The value of alpha lies between 0.0 and 1.0 whrer 0.0 represents fully transparency and 1.0 represents not transparent 
+
+    <style>
+        h1{
+            color: hsla(120, 100%, 50%, 0.5);
+        }
+    </style>
+
+    <h4>Text Color</h4>
+    <style>
+        h4{
+            color: red;
+        }
+    </style>
+
+    <h5>Background Color</h5>
+    <style>
+        h5
+        {
+            background-color: green;
+        }
+    </style>
+
+    <h6>Border Color</h6>
+
+    <style>
+        h6{
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+
+ 
+
+
+</body>
+</html>
