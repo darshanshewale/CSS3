@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<h1>CSS Lists</h1>
+<pre>
+    The List in CSS specifies the listing of the contents or items in a particular manner i.e it can either be organized orderly or unorder way
+    which helps to make a clean webpage
+
+    @Unorder List: In unordered list the list items are marked with bullets i.e small black circle by default.
+    @ordered list: In ordered list, the list items are marked with numbers and an alphabet.
+
+    <h2>List item marker</h2>
+
+    <pre>
+        This property specifies the type of item marker i.e unordered list or ordered list The list-style-type property specifies 
+        the apperance of the list item marker(such as a disc,character or custom counter style) of list item element its default value is disc
+    </pre>
+
+<style>
+    ul.a {
+        list-style-type: square;
+    }
+
+    ul.b {
+        list-style-type: lower-alpha;
+    }
+
+    ol.c {
+        list-style-type: lower-greek;
+    }
+
+    ol.d {
+        list-style-type: square;
+    }
+</style>
+
+<ul class="a">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>React</li>
+</ul>
+
+<ul class="b">
+    <li>History</li>
+    <li>Geography</li>
+    <li>Math</li>
+</ul>
+
+<ol class="c">
+    <li>INDIA</li>
+    <li>Pakistan</li>
+    <li>bangladesh</li>
+</ol>
+
+<ol class="d">
+    <li>Virat</li>
+    <li>Rohit</li>
+    <li>Raina</li>
+</ol>
+
+<h2>Image as List marker</h2>
+
+<style>
+    ul.img {
+        list-style-image: url("");
+
+    }
+</style>
+<pre>
+            This property specifies the image as a list item marker .The list-style-image property is used to sets an image to be used as 
+            the list item marker . its defualt value is "none"
+         </pre>
+
+<ul class="img" style="height: 5px; width: 5px;">
+    <li>happy</li>
+    <li>Coding</li>
+</ul>
+
+<br>
+
+<h2>List Marker position</h2>
+This Property Specifies the postion of the list item marker. The list-styele-position property is used to sets the
+position of the
+marker relative to a list item. its default value is outside.
+
+@list-style-position:outside
+
+<style>
+    ul.position {
+        list-style-position: outside;
+
+    }
+
+    ul.inside {
+        list-style-position: inside;
+    }
+</style>
+
+<ul class="position">
+    <li>One<br>
+        In this the bullet points will be outside the list item
+    </li>
+    <li>two <br>
+        The start of each line of the list will be aligned vertically </li>
+</ul>
+
+<ul class="inside">
+    <li>Inside <br>
+        In this bullet points will be inside the lsit item</li>
+    <li>Inside <br>
+        The line along with the bullet points will be aligned vertically</li>
+</ul>
+
+<h2>Shorthand Property</h2>
+<pre>Shorthand property allow us to set all the list properties in one command. The Order of property is a type, 
+            position and image if any   of the properties is missing the defualt value is inserted</pre>
+
+
+
+<style>
+    ul.shorthand {
+        list-style: square inside;
+    }
+</style>
+<ul class="shorthand">
+    <li>Property</li>
+    <li>shorthand</li>
+    <li>testing</li>
+</ul>
+
+<h2>
+    Styling Lists
+</h2>
+<p> The list can be formatted in CSS. Different colors,borders, backgrounds and paddings can be set for the lists
+</p>
+
+</pre>
+
+<style>
+    ul.styling
+    {
+        list-style: square;
+        background: pink;
+        padding: 2px;
+    }
+</style>
+
+<ul class="styling">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+
+</html>

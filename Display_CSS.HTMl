@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Display</h1>
+    <pre>
+        The Display property in CSS defines the componenets (div,hyperlink ,headings etc) going to be placed on the web page As the 
+        name suggest this property is used to define the display of the different parts of a web page.
+
+        
+    1)Inline: Dislpay an inline element 
+    2)block: Display an block element 
+    3)contents : used to disappear the container 
+    4)flex : Display an element as a block0-level felx container
+    5)Grid : Display an element as a block-level grid container 
+    6)inline-block,inline-flex,inline-grid,inline-table 
+    7)table,table-caption,table-column,table-header,table-footer,table-row,table-cell,table-column,table-row 
+    8)None :used to remove for all element
+    9)initial:it is used to set the default value
+    10)inherits: it is used to inherits property from its parents elememnts
+       
+    </pre>
+
+    <h1>Block</h1>
+    <pre>
+        This property is used as the default property of div.This property places the div one after another vertically.
+        the height and width of th div can be changed using the block property if the width is not mentioned then the div 
+        under the block property will take up the width of the container
+    </pre>
+     <style>
+        #a1
+        {
+           background: teal;
+           display: block;
+           width: 50px;
+           height: 20px;
+        }
+        #a2
+        {
+            background: red;
+            display: block;
+            width: 50px;
+            height: 30px;
+        }
+        #a3
+        {
+            background:green;
+            display: block;
+            height: 30px;
+            width: 50px;
+        }
+     </style>
+
+    <div  class="main"> 
+        <div id="a1">A1</div>
+        <div id="a2">A2</div>
+        <div id="a3">A3</div>
+    </div>
+
+    <h1>Inline</h1>
+    <pre>This property is the defualt property for anchor tags this is used to place the div inline i.e in a horizontal manner.The inline display
+        property ignores the height and the width set by the user. </pre>
+
+        <style>
+            #b1
+            {
+                display: inline;
+                height: 400px;
+                width: 400px;
+                background-color: yellow;
+            }
+            #b2
+            {
+                display: inline;
+                height: 300px;
+                width: 3300px;
+                background-color: blue;
+            }
+            #b3
+            {
+                display: inline;
+                height: 300px;
+                width: 300px;
+                background-color: blueviolet;
+            }
+        </style>
+
+        <div id="b1">Block A1</div>
+        <div id="b2">Block A2</div>
+        <div id="b3">Block A3</div>
+
+        <h2>Inline Block</h2>
+        <pre>
+            This fetures uses the both properties mentioned above,block and inline. so this property aligns the div inline but the 
+            difference is it can edit the height and the width of block basically this will aligh the div both in block and inline fashion
+
+        </pre>
+        <style>
+            #c1
+            {
+                display: inline-block;
+                background-color: violet;
+                height: 400px;
+                width: 400px;
+            }
+            #c2
+            {
+                display: inline-block;
+                background-color: aqua;
+                height: 300px;
+                width: 300px;
+            }
+            #c3
+            {
+                display: inline-block;
+                background-color: brown;
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+        <div id="c1">Block c1</div>
+        <div id="c2">Block c2</div>
+        <div id="c3">Block c3</div>
+
+        <h2>None</h2>
+        This property hides the div or the container which use this property. using it on  one of the div it will make working clear
+
+        <style>
+            #a1
+            {
+               background: teal;
+               display: block;
+               width: 50px;
+               height: 20px;
+            }
+            #a2
+            {
+                background: red;
+                display: none;
+                width: 50px;
+                height: 30px;
+            }
+            #a3
+            {
+                background:green;
+                display: block;
+                height: 30px;
+                width: 50px;
+            }
+         </style>
+    
+        <div  class="main"> 
+            <div id="a1">A1</div>
+            <div id="a2">A2</div>
+            <div id="a3">A3</div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CSS Links</h1>
+    <pre>A link is a connection from one page to another web page .CSS property can be used to style the links in various differnet ways 
+        Sates of Link: before discussing CSS properties It is Important to know the states of link 
+        Link can exist in different states and they can be styled using pseudo-classes
+
+        There are four states of link given below 
+        1)a.link: this is normal unvisited link.
+        2)a.visited : this is a link visited by user at least once.
+        3)a.hover : This is link when mouse hovers over it.
+        4)a.active : this is link that is just clicked.
+        
+        <pre>
+            a.link 
+            {
+                color:color_name;
+            }
+        </pre>
+
+    <pre>
+            @By defualt the links created are underlined
+            @when the mouse is hovered above a link, it changes to a hand icon.
+            @Normal/unvisited link are Blue
+
+       </pre>
+
+    <a href="https://www.google.com/" style="font-size: 30px;">Google it simple</a>
+
+    <h1>CSS Properties of Links</h1>
+
+    <pre>some of basic CSS properties of links are given below:
+        @Color
+        @font-family
+        @text-decoration
+        @background-color
+
+       </pre>
+
+    <style>
+        a:link {
+            color: black;
+            font-family: 'Times New Roman';
+            text-decoration: underline;
+            background-color: rgba(0, 255, 0, 0.5);
+        }
+
+        a:visited {
+            color: red;
+            font-family: 'Lucida Sans';
+        }
+
+        a:hover {
+            color: purple;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a:active {
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button
+        {
+            background-color: brown;
+        }
+    </style>
+
+    <h2>Color</h2>
+    This CSS property is used to change the color of the link text
+    <br>
+
+    <h2>Font family</h2>
+
+    This property is used to chnage the font type of a link using font-family property.
+
+    <h2>Text Decoration</h2>
+    This property is basically used to remove/add underlines from to a link 
+
+    <h2>Background Color</h2>
+    This property is used to set the background color of the link 
+
+    <a href="https://www.google.com/" target="_blank">google it </a>
+
+    <h2>CSS Link Button</h2>
+    <pre>
+        CSS Links can also be style using buttton/boxes. The Following example show how CSS links can be designed as buttons
+    </pre>
+
+    <button>
+        <a href="https://www.google.com/">Google doodle</a>
+    </button>
+
+   </pre>
+
+
+</body>
+
+</html>

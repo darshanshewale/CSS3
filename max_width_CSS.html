@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS max width property</h1>
+    <pre>
+    The Max-width property in css is used to define the maximum width of an element the value of the width can not be larger
+    than the value of max-width if the content is larger than the max-width then it will go to the next line and if the content 
+    is smaller than the max-width then it has no effect
+
+    property values:
+
+    1)none: it is the default value and it does not contain max-width.
+    2)length:This property is used to set the length of max-width.The length can be set in the form of px,cm etc
+    3)percentage:This property is sued to set the max-width in the form of a percentage
+    4)initial: it is used to set an element's CSS property to its default value. The initial keyword can be used for any CSS property 
+    and on any HTML element 
+    5)inherit: This property is used to inherit a property to an element from its parent element property value 
+    the inherits keyword can be used for inheriting any CSS property and on any HTML element 
+     </pre>
+
+     <style>
+        p{
+            max-width: none;
+            color: yellow;
+            background-color: green;
+        }
+        #p1
+        {
+            max-width: 40px;
+            color: red;
+            background-color: violet;
+        }
+        #p2
+        {
+            max-width: 40%;
+            color: beige;
+            background-color: black;
+        }
+        #p3
+        {
+            max-width: initial;
+            color: white;
+            background-color: green;
+        }
+        div.d1
+        {
+            max-width: 500px;
+            color: blueviolet;
+            background-color: azure;
+        }
+     </style>
+
+     <p> Hello Coders keep coding </p>
+     <p id="p1">max width property </p>
+     <p id="p2">max width in percentage</p>
+     <p id="p3">max width initial</p>
+     <div class="d1">
+        <p>this is used inherit property</p>
+     </div>
+    
+</body>
+</html>

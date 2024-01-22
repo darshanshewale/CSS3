@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>CSS table</h1>
+
+A table is css is used to apply the various styling properties to the HTMLtable elements to arrange the data in rows and columns 
+or possibly in a more comples structure in a properly organized manner. 
+
+<h2>Border</h2>
+It is used for specifying borders in the table. 
+
+<h2>Border collapse</h2>
+The border collapse property tellus whether the browser should control the apperance of the adjacent borders that tocuh each other
+or whether each cell should maintain its style
+
+<h2>Border spacing</h2>
+This property specifies the space between the borders of the adjacent cells.
+
+<h2>Caption Side</h2>
+Caption side property is used to for controllling the placement of the Caption in the table by default cpations are placed above the table 
+
+<h2>Empty cell</h2>
+This property specify whether or not to display borders and background on empty cell in the table 
+
+<h2>Table layout</h2>
+The table layout property is used to set up the layout algorithm used for the table 
+
+
+
+
+
+<br>
+
+
+<style>
+    table.t1    
+    {
+        border: solid;
+        border-collapse: collapse;
+        caption-side: top;
+        table-layout: fixed;
+
+    }
+    table,th,td.t2{
+        border: solid;
+        border-collapse: separate;
+        border-spacing: 10px;
+        caption-side: bottom;
+        empty-cells: hide;
+        table-layout: auto;
+    }
+
+    
+
+</style>
+
+<br>
+
+<table class="t1">
+    <caption>Student Data</caption>
+    <tr>
+        <th>roll No</th>
+        <th>Name</th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>raj</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td> vijay velam vasu reddy anna malum vankat vickey</td>
+    </tr>
+</table>
+<br>
+<table class="t2">
+    <caption>Songs information</caption>
+    <tr>
+        <th>Song</th>
+        <th>singer</th>
+    </tr>
+    <tr>
+        <td>tumhi ho</td>
+        <td>Arjit singer</td>
+        
+    
+    </tr>
+
+    <tr>
+        <td>bol do na zara</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>tara tara tara tara tara tara </td>
+    </tr>
+</table>
+
+
+
+
+<body>
+    
+</body>
+</html>
