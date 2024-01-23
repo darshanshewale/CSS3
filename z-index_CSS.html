@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>CSS z-Index property</h1>
+
+    <pre>
+
+    The Z-indes property is used to displace element on the z-axis i.e in or outof the screen it is used to define the order of elements if they overlap on each other
+    if they overlap on each other.
+    
+    Property values:
+    @Auto: the stack order is equal to that the parent(default)
+    @Number: the Stack order depends in the number.
+    @initial: Sets the property to its default value
+    @inherit: Inherits the property from the parent element
+
+    </pre>
+
+    <style>
+        img
+        {
+            position: absolute;
+            z-index: -1;
+        }
+        p{
+            background-color: green;
+        }
+        .p1
+        {
+            background-color: green;
+            margin-top: 300px;
+        }
+        .im
+        {
+            position: absolute;
+            z-index:+1;
+            margin-top  : 300px;
+        }
+        
+    </style>
+  
+  <img src="20190612094854-Yuvi1 (1).jpeg" alt="" height="300" width="300">
+    <p>This is example shows the use of Z-index property </p>
+
+    <br>
+
+    <img class="im" src="20190612094854-Yuvi1 (1).jpeg" alt="" height="300" width="300">
+    <p class="p1">This is example shows the use of Z-index property </p>
+
+
+
+
+     
+
+    
+</body>
+</html>

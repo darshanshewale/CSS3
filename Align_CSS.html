@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        The align in CSS is used for postioning the items along with setting the distribution of space between and around content item.
+        We can align the items either horizontally or vertically .The various methods and technique are used to  center then by taking 
+        care of the left and right margin etc
+
+        1)Margin:auto: this property is used to align a block element into the center.
+        Note: margin auto will not work in IE8 unless a !DOctype is declared
+    </pre>
+
+    <h2>Margin:auto</h2>
+    
+    <STYle>
+        .center
+        {
+            margin: auto;
+            width: 100px;
+            border: solid 4px red;
+        }
+        .right 
+        {
+            position: absolute;
+            width: 200px;
+            right: 0px;
+            border: 4px solid yellow;
+        }
+        .text_center 
+        {
+            text-align: center;
+            border: 4px double purple;
+        }
+        .p_center
+        {
+            padding: 10px;
+            border: 4px solid green;
+            text-align: center;
+        }
+    </STYle>
+
+    <div class="center">
+        This is div element on which margin auto is used to horizontally align it into center
+    </div>
+
+    <h2>positioned absolute</h2>
+     <div class="right">
+        <p>
+            Absolute positioned elements can overlap other element 
+        </p>
+     </div>
+     <br>
+
+     <h2>text-align:center</h2>
+      <div class="text_center">
+        This is the text align to center 
+      </div>
+
+      <h2>padding</h2>
+
+      <div class="p_center">This is vertically centered</div>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        pre
+        {
+            width: 100px;
+            height: 80px;
+            border: 5px solid;
+            overflow: visible;
+            border-color: black;
+        }
+        p.p1{
+            overflow: hidden;
+            border: solid red 5px;
+            height: 100px;
+            width: 100px;
+
+        }
+        p.p2
+        {
+            overflow: scroll;
+            border: 4px dashed brown;
+            height: 100px;
+            width: 100px;
+        }
+        p.p3
+        {
+            overflow: auto;
+            border: 4px double green;
+            height: 100px;
+            width: 100px;
+        }
+        p.p4
+        {
+            border: 4px double yellow;
+            height: 100px;
+            width: 100px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Overflow</h1>
+
+    <h2>property Visible</h2>
+
+    <pre>
+    The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars
+    
+    1)visible: the content is not clipped and is visible outside the element box
+    2)Hidden : the overflow is clipped and the rest of the content is invisible
+    3)scroll: The Overflow is clipped but a scrollbar is added to see the rest of the content the scrollbar can be horizontal or vertical
+    4)Auto : It automatically adds a scrollbar whenever it is required
+    5)overflow-x and overflow-y: this property specifes how to change the overflowof elements x deals 
+    with horizontal edges of y dealsd with vertical edges
+
+
+    </pre>
+    <br>
+
+    <h2>Property hidden</h2>
+
+    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia odit placeat veniam rerum error 
+        facere! Sunt, eveniet quis quo expedita sint molestiae dolor. Tenetur vel neque voluptatibus eum expedita.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem vel suscipit assumenda incidunt atque cumque, 
+    ab, tempora minus doloremque magni necessitatibus dolor perferendis aliquam reiciendis facilis esse cupiditate labore quidem!
+    </p>
+
+    <h2>property Scroll</h2>
+
+    <p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia odit placeat veniam rerum error 
+        facere! Sunt, eveniet quis quo expedita sint molestiae dolor. Tenetur vel neque voluptatibus eum expedita.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem vel suscipit assumenda incidunt atque cumque, 
+    ab, tempora minus doloremque magni necessitatibus dolor perferendis aliquam reiciendis facilis esse cupiditate labore quidem!
+    </p>
+
+    <h2>Property Auto</h2>
+
+    <p class="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia odit placeat veniam rerum error 
+        facere! Sunt, eveniet quis quo expedita sint molestiae dolor. Tenetur vel neque voluptatibus eum expedita.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem vel suscipit assumenda incidunt atque cumque, 
+    ab, tempora minus doloremque magni necessitatibus dolor perferendis aliquam reiciendis facilis esse cupiditate labore quidem!
+    </p>
+
+    <h2>Overflow x and y property</h2>
+
+    <p class="p4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia odit placeat veniam rerum error 
+        facere! Su  nt, eveniet quis quo expedita sint molestiae dolor. Tenetur vel neque voluptatibus eum expedita.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem vel suscipit assumenda incidunt atque cumque, 
+    ab, tempora minus doloremque magni necessitatibus dolor perferendis aliquam reiciendis facilis esse cupiditate labore quidem!
+    </p>
+    
+
+
+
+
+    
+
+</body>
+</html>

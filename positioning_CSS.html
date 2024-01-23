@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS positioning elements</h1>
+
+    <pre>
+     The posititon property in CSS tells about the menthod of positioning for an element or an HTML entity and the postioning of 
+     an element can be done using the top,right, bottom and left properties
+     These specify the distance of an HTMl element from the edge of the viewport.
+    </pre>
+
+    <b>There are five different types of position properties avilable in CSS</b>
+    <pre>
+    1)Fixed position: Any HTML element with position : Fixed property will be positoned relative to the viewport. An element 
+    with fixed positioning allow it to remain in the same position even we scroll the page we can set the position of the element 
+    using top,right ,bottom and left.
+
+    2)Static : This menthod of postioning is set by default if we don't mention the method of positioning for any element, the element 
+    has the position:static method by default by defining static, the top ,right ,bottom and left will not have any control over the 
+    element the element will be postioned with the normal flow of the page.
+    
+    3)relative: An element with postion: realative is postioned relatively with the other elements which are sitting on top of it.
+    If we set its top,right ,bottom or left other element will not fill up the gap left by this element An element with its position 
+    set to realative and when adjusted using top, bottom ,left and right will be postioned realative to its original position 
+
+    4)Absolute:An element with absolute position will be positioned with respect to its nearest Non static ancestor The positioning 
+    of this element does not depend upon its sibling or the elements which are the same level.
+
+    5)Sticky: Element with postion : sticky and top:0 played a role between fixed & realative based on the postion where it is placed 
+    if the element is placed in the middle of the document then when the used scrolls the document the sticky element start scrolling 
+    until it touched the top when it touches the top it will be fixed at the top place in spite of further scrolling 
+    we can stick the element at the bottom with bottom property
+
+    
+    </pre>
+
+    <h1>Fixed property</h1>
+
+    <style>
+      .fixed {
+        position: fixed;
+        background-color: red;
+        padding: 30px;
+        top: 50;
+        left: 10;
+      }
+      .static {
+        position: static;
+        background-color: yellow;
+        padding: 30px;
+      }
+      .relative {
+        position: relative;
+        background-color: orange;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .absolute {
+        position: absolute;
+        background-color: blue;
+      }
+      .sticky {
+        position: sticky;
+        background-color: brown;
+        top: 10px;
+        right: 50px;
+      }
+    </style>
+
+    <div class="fixed">
+      <span>position fixed </span>
+    </div>
+
+    <pre>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facere doloremque at sapiente veritatis alias ut sit
+        consequuntur culpa? Quidem, qui? Facere libero suscipit soluta molestias a atque iste asperiores?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas beatae provident alias, rerum numquam corrupti eaque
+        asperiores quis odio pariatur fugit illum expedita ut nostrum quasi ea consequuntur unde? Ut.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab odio distinctio impedit dolorum ratione tenetur quo
+        aperiam eius praesentium, voluptatibus illum minus, ex ipsa delectus, ea animi autem voluptas!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati dolorem quasi possimus voluptatum sed ex quae nihil
+        numquam debitis, dolore at soluta natus ipsam libero, quibusdam eos atque cumque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iure, recusandae odio impedit quae vero fugit possimus eos
+        nulla, delectus repudiandae nobis perspiciatis hic temporibus labore vitae a aliquam! Corporis?
+    </pre>
+
+    <h1>Static property</h1>
+
+    <div class="static">
+      <span>position static </span>
+    </div>
+
+    <pre>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facere doloremque at sapiente veritatis alias ut sit
+        consequuntur culpa? Quidem, qui? Facere libero suscipit soluta molestias a atque iste asperiores?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas beatae provident alias, rerum numquam corrupti eaque
+        asperiores quis odio pariatur fugit illum expedita ut nostrum quasi ea consequuntur unde? Ut.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab odio distinctio impedit dolorum ratione tenetur quo
+        aperiam eius praesentium, voluptatibus illum minus, ex ipsa delectus, ea animi autem voluptas!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati dolorem quasi possimus voluptatum sed ex quae nihil
+        numquam debitis, dolore at soluta natus ipsam libero, quibusdam eos atque cumque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iure, recusandae odio impedit quae vero fugit possimus eos
+        nulla, delectus repudiandae nobis perspiciatis hic temporibus labore vitae a aliquam! Corporis?
+    </pre>
+
+    <h1>Relative Position</h1>
+
+    <pre>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quidem dignissimos doloremque, explicabo consectetur sint voluptate
+        lugit illum ullam rerum consequatur incidunt in provident natus vel saepe quo commodi blanditiis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ducimus accusantium nobis dolorum, iure numquam, totam molestiae magni
+        dolorem minima quo eius non optio aliquam perferendis repellendus officia qui quis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod numquam eius magni saepe sed. Vero, numquam officia rem ducimus eius
+        similique sunt neque dolorum odit, sint, eaque ipsum. Ducimus, doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat
+        esse ratione, sunt quos nemo commodi illum fuga praesentium, quo nostrum rem similique omnis et dicta laborum, ea voluptatum rerum.
+
+
+    <div class="relative">
+        <span>position realative </span>
+    </div>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facere doloremque at sapiente veritatis alias ut sit
+        consequuntur culpa? Quidem, qui? Facere libero suscipit soluta molestias a atque iste asperiores?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas beatae provident alias, rerum numquam corrupti eaque
+        asperiores quis odio pariatur fugit illum expedita ut nostrum quasi ea consequuntur unde? Ut.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab odio distinctio impedit dolorum ratione tenetur quo
+        aperiam eius praesentium, voluptatibus illum minus, ex ipsa delectus, ea animi autem voluptas!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati dolorem quasi possimus voluptatum sed ex quae nihil
+        numquam debitis, dolore at soluta natus ipsam libero, quibusdam eos atque cumque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iure, recusandae odio impedit quae vero fugit possimus eos
+        nulla, delectus repudiandae nobis perspiciatis hic temporibus labore vitae a aliquam! Corporis?
+    </pre>
+
+    <h1>Absolute position</h1>
+
+    <pre>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quidem dignissimos doloremque, explicabo consectetur sint voluptate
+        lugit illum ullam rerum consequatur incidunt in provident natus vel saepe quo commodi blanditiis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ducimus accusantium nobis dolorum, iure numquam, totam molestiae magni
+        dolorem minima quo eius non optio aliquam perferendis repellendus officia qui quis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod numquam eius magni saepe sed. Vero, numquam officia rem ducimus eius
+        similique sunt neque dolorum odit, sint, eaque ipsum. Ducimus, doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat
+        esse ratione, sunt quos nemo commodi illum fuga praesentium, quo nostrum rem similique omnis et dicta laborum, ea voluptatum rerum.
+
+
+    <div class="relative">
+        <div>
+            This div has 
+            <span>
+                <strong>Postion:realtive</strong>
+            </span>
+        </div>
+        <div class="absolute">
+            This div has 
+            <span>
+                <strong>position:absolute;</strong>
+            </span>
+        </div>
+    </div>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facere doloremque at sapiente veritatis alias ut sit
+        consequuntur culpa? Quidem, qui? Facere libero suscipit soluta molestias a atque iste asperiores?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas beatae provident alias, rerum numquam corrupti eaque
+        asperiores quis odio pariatur fugit illum expedita ut nostrum quasi ea consequuntur unde? Ut.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab odio distinctio impedit dolorum ratione tenetur quo
+        aperiam eius praesentium, voluptatibus illum minus, ex ipsa delectus, ea animi autem voluptas!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati dolorem quasi possimus voluptatum sed ex quae nihil
+        numquam debitis, dolore at soluta natus ipsam libero, quibusdam eos atque cumque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iure, recusandae odio impedit quae vero fugit possimus eos
+        nulla, delectus repudiandae nobis perspiciatis hic temporibus labore vitae a aliquam! Corporis?
+    </pre>
+
+    <h1>Position Sticky</h1>
+
+    <pre>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quidem dignissimos doloremque, explicabo consectetur sint voluptate
+        lugit illum ullam rerum consequatur incidunt in provident natus vel saepe quo commodi blanditiis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, ducimus accusantium nobis dolorum, iure numquam, totam molestiae magni
+        dolorem minima quo eius non optio aliquam perferendis repellendus officia qui quis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod numquam eius magni saepe sed. Vero, numquam officia rem ducimus eius
+        similique sunt neque dolorum odit, sint, eaque ipsum. Ducimus, doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellat
+        esse ratione, sunt quos nemo commodi illum fuga praesentium, quo nostrum rem similique omnis et dicta laborum, ea voluptatum rerum
+
+    <div class="sticky">
+        <span>position sticky </span>
+    </div>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam facere doloremque at sapiente veritatis alias ut sit
+        consequuntur culpa? Quidem, qui? Facere libero suscipit soluta molestias a atque iste asperiores?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas beatae provident alias, rerum numquam corrupti eaque
+        asperiores quis odio pariatur fugit illum expedita ut nostrum quasi ea consequuntur unde? Ut.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab odio distinctio impedit dolorum ratione tenetur quo
+        aperiam eius praesentium, voluptatibus illum minus, ex ipsa delectus, ea animi autem voluptas!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati dolorem quasi possimus voluptatum sed ex quae nihil
+        numquam debitis, dolore at soluta natus ipsam libero, quibusdam eos atque cumque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iure, recusandae odio impedit quae vero fugit possimus eos
+        nulla, delectus repudiandae nobis perspiciatis hic temporibus labore vitae a aliquam! Corporis?
+    </pre>
+  </body>
+</html>
