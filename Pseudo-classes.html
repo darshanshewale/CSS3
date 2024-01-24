@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Pseudo-Classes</h1>
+    <p>A pseudo class is CSS is used to define the special state of an element. It can be combined with a CSS Selector to add an effect 
+        to existing elements based on their states 
+
+        pseudo class names are not case sensitive
+    </p>
+
+    
+    <style>
+        .d1
+        {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            font-size: large;
+            text-align: center;
+
+        }
+        .d1:hover
+        {
+            background-color: orange;
+        }
+        .d2:active
+        {
+            background-color: red;
+        }
+
+        .d4
+        {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+        input:focus
+        {
+            background-color: crimson;
+        }
+        a{
+            color: blue;
+        }
+        .v1:visited
+        {
+            color: red;
+        }
+
+
+    </style>
+
+<h2>Hover pseudo class</h2>
+<p>this pseudo-class is used to add a special effect to an element when our mouse pointer is over it the below 
+</p>
+
+    <div class="d1">
+        color will changes if mouse hover over on same
+    </div>
+
+    <h2>Active pseudo classes</h2>
+     <p>This pseudo-class is used to select an element that is activated when the user clicks on it </p>
+
+     <div class="d2">
+        color will changes if click on me
+
+     </div>
+
+     <h2>Focus </h2>
+
+     <p>used to select an element that is currently focused by the user it works on user input elements used in forms and is triggered as soon
+        as the user click on it  </p>
+
+             
+        <div class="d4">
+            <form action="">
+                <label for="">Username
+                    <input type="text" placeholder="username">
+                </label>
+                <label for="">
+                    password
+                </label>
+                <input type="password">
+                <button type="submit">submit</button>
+            </form>
+        </div>
+
+        <h2>visited pseudo class</h2>
+        <p>This pseudo-class is used to select the links whic have been already visited by the user</p>
+
+        <p>
+            <a class="v1" href="https://www.google.com/" target="_blank"> color of link will be changes once site got visited</a>
+        </p>
+    
+</body>
+</html>

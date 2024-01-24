@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Pseudo elements</h1>
+    <pre>
+        A cSS Pseudo element is a keyword added to a selector that lets you style a specific part of the selected elements
+    </pre>
+
+    <style>
+        .first::first-line
+        {
+            color: red;
+            
+        }
+        .f1::first-letter
+        {
+            color: green;
+        }
+        .f2::before
+        {
+            content: '"';
+            color: red;
+        }
+        .f3::after
+        {
+            content: '!';
+            color: firebrick;
+        }
+         
+        ul li::marker
+        {
+            color: red;
+        }
+        .f4::selection
+        {
+            color: white;
+            background-color: orange;
+        }
+        ::selection
+        {
+            color: white;
+            background-color: green;
+        }
+
+    </style>
+    <h1>First-line pseudo-elements</h1>
+
+    <pre class="first">
+        applies styles to the first line of a block element 
+        testing on the same
+    </pre>
+
+    <h2>First Letter pseudo element</h2>
+    <p class="f1">
+        Applies style to the first letter of the first line of a block-level element.
+    </p>
+
+    <h2>before Pseudo element 
+    </h2>
+    <p class="f2">Creates a pseudo element that is he first child of the selected element.</p>
+
+    <h2>after pseudon element</h2>
+    <p class="f3">Creates a pseudo elements that is the last child of the selected elements</p>
+
+    <h2>Marker pseudo-element</h2>
+    <p>selects the marker box of a list item, which typically contains a bullet or number.</p>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <h2>Selection Pseudo-element</h2>
+    <p class="f4">applies styles to the part of a document that has been highlighted by the user such as clickin and dragging the mouse across next</p>
+ 
+  
+    
+</body>
+</html>
