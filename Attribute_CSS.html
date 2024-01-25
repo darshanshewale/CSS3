@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Attribute selector</h1>
+    <pre>
+        The CSS Attribute selector is used to select an element with some specific attribute or attribute value.
+        It is an excellent way to style the HTML elements by grouping them based on some specific attributes and the attribute 
+        selector will select those elements with similar attributes.
+    </pre>
+
+    <style>
+        [class]
+        {
+            text-align: center;
+            color: green;
+        }
+        .a1
+        {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: -20px;
+        }
+        [title="val"]
+        {
+            text-align: center;
+            margin-top: 0px;
+        }
+        [title="val1"]
+        {
+            font-size: 17px;
+            text-align: center;
+            margin-top: 0px ;
+        }
+     </style>
+
+     <h1>[attribute] selector</h1>
+     <p>This type of attribute selector is used to select all the elements that have the specified attribute and applies 
+        the CSS property to that attribute. for example the selector [class] will select all the elements with the style attribute
+     </p>
+
+     <div class="a1">Happy coding </div>
+     <p>Problem solving is an art !!</p>
+
+     <h1 title="val">[attribute ="value"]selector</h1>
+     <p title="val1">
+        This selelctor is used to select all the elements whose attribute has the value exactly the same as the specified value.
+     </p>
+
+     <h1>[attribute~="value"]selector</h1>
+     <p>
+        this selector is used to select all the elements whose attribute value is a list of space-separated values one of which
+        is exactly equal to the specified value.
+     </p>
+
+     <h1>[attribute]="value"</h1>
+     <p>
+        This selelctor is used to select all the elements whose attribute has a hyphen-separated list of values beginning with the specified
+        value the value has to be a whole word either alone or followed by a hyphen.
+    
+     </p>
+
+     <h1>[attribute]^="value"</h1>
+     <p>
+        This selector is used to select all the elemets whose attribute value begins with the specified value. The value doen't need to be a 
+        whole word.
+     </p>
+
+     <h1>[attribute$="value"]</h1>
+     <p>
+        This selector is used to select all the elements whose attribute value ends with specified value. The value
+        doesn.t need to be a whole word.
+     </p>
+
+     <h1>[attribute*="value"]</h1>
+     <p>
+        This selector selects all the elements whose attribute value contains the specified value present anywhere
+        the value doen't need to be a whole word
+     </p>
+
+     
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .a1
+    {
+        color: red;
+    }
+    .a2
+    {
+        text-align: start;
+    }
+    .a3
+    {
+        text-decoration-line: overline;
+        text-decoration-style: dashed;
+        text-decoration-color: yellow;
+    }
+    .a4
+    {
+        text-indent: 200px;
+    }
+    .a5
+    {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .a6
+    {
+        text-transform: uppercase;
+    }
+    .a7
+    {
+        text-shadow: 5px 5px 8px purple;
+    }
+    .a8
+    {
+        letter-spacing: 3px;
+    }
+    .a9
+    {
+        line-height: 20px;
+    }
+    .a10
+    {
+        direction: ltr;
+    }
+    .a11
+    {
+        word-spacing: 5px;
+    }
+</style>
+<body>
+    <h1>CSS Text formatting</h1>
+    <pre>
+        The CSS text formatting properties are used to format text,style text and perform different types of manipulation
+        like word spacing,alignment,justification and text trasformation ,
+    </pre>
+    
+    <h2>Text Color</h2>
+    <p class="a1">This property is used to set the color of the text and the color can be set by using a color name ,hex value , rgb value.</p>
+    
+    <h2>text-align</h2>
+    <pre class="a2">This property in CSS is used to specify the horizontal alignment of text in an element inside a block element or table cell box
+        1)left:left aligned with respect to the container
+        2)right:right aligned with respect to the container
+        3)center:center aligned with respect to container
+        4)justify : last line gets justified the last line will occupy the entire width of the container ,extra space in inserted between  the 
+        words to achieve this property i.e can be set inter-word, inter-character,auto,none.
+        5)start: left aligned if text direction is left to right 
+        6)end:right aligned if text direction is left to right 
+        7)auto:to be aligned as per text-aligned property of the container
+        8)initial: to defualt
+        9)aligned property of its parent element
+    </pre>
+
+    <h2>text Decoration</h2>
+    <pre class="a3">The text decoration property is used to decorate the content of the text iti is essentially decorating the text with different
+        kinds of lines it is shorthand property for text decoration-line ,text-decoration-color and text-decoration-style. 
+        1)text-decoration-line:it is used to sets various kind of text decoration(underline,overline etc)
+        2)text-decoration-style:it is used to set the text decoration of an element(e.g dotted,wavy etc)
+        3)text-decoration-color:iti is used to specify color of decoration
+    </pre>
+
+    <h2>Text Indent </h2>
+    <pre class="a4">It is used to indent the first line of the paragraph and the size can be in px,cm,pt. 
+        it also make negative values means the the first line will be indeneted to the left.
+        1)length:used to set fixed indentation in terms of px,pt,cm,em etc. The defualt value of lenght of 0
+        2)percentage(%) : it is used to define the indentation in % as campared to the width of the element 
+        3)initial: it is used to set text-indent property of its defualt value
+    </pre>
+
+    <h2>Text Overflow property</h2>
+    <pre class="a5">This property of text formattiing specify that some text has overflow and is hiddent from the view
+        The white-spcae -property must be set to no wrap and the overflow property must be set to hidden.
+        1)clip: text is clipped and can not seen this is the defualt value 
+        2)ellipsis : text is clipped and teh clipped is represented as '...'
+        3)string: text is represented to the user using a sting of the coders choice this option is only visible in the  firefox browser
+        4)initial : default value
+        5)inherit: inherit from the parent 
+    </pre>
+
+    <h2>text transform </h2>
+
+    <pre class="a6">It is used to control capitalization of the text 
+        1)none:default value
+        2)capitalize: it is used to transfrom the first character of each word to upeercase
+        3)uppercase:all character in each word in uppercase
+        4)lowercase:all character in each word into lowercase
+        5)initial: sets the property to its default value 
+
+    </pre>
+
+    <h2>CSS text-shadow property</h2>
+    <pre class="a7"> The text-shadow property in CSS is used to add shadows to the text.This property accepts a list of shadows
+        that are to be applied to text,separated by the comma the default value of the text-shadow property is none.
+        1)h-shadow: this property is required & used to specify the postion of horizontal shadow it accepts the negative values.
+        2)v-shadow: this property is required & used to specify the positon of vetical shadow it is also accepts the negative values.
+        3)blur radius: oit used to set the blur radius its default value  is 0 & is optional
+        4)none: default value
+        5)color:color of the shadow it is optional
+        6)initial: default value
+        7)inherit:inherited from parent 
+    </pre>
+
+    <h2>CSS letter spacing property</h2>
+    <pre class="a8">
+        The letter spcacing property in CSS used to set the spacing behaviour between text character i.e increasing or decreasing the 
+        space between character in a text
+        1)Normal:The normal letter spacing for the current font i.e no extra space between characters this is default value
+        2)length:this mode extra inter character spcae in addition to the defualt space between characters negative value are also allowed
+        3) inital: this mode sets this property to its default value
+
+    </pre>
+
+    <h2>CSS line -height property</h2>
+    <pre class="a9">
+        The line-height property in CSS is used to set the amount of space used for lines such as in the text.Negative values are not allowed
+        1)normal:normal line height . default value
+        2)initial: default value
+        3)number:this value is a unitless number multiplied by the current font size to set the line height in most cases
+        4)length: mode a fixed line height is specified
+        5)percentage:used to set line height in percent of the current font size.
+    </pre>
+
+    <h2>CSS Direction property</h2>
+    <pre class="a10">
+        The direction property specifies the direction of the text writing within any block element it can have two values rtl(right to left)
+        or ltr (left to right)
+        1)rtl:right to left direction
+        2)ltr:left to right direction
+        3)initial:default Property
+        4)inherit;inherits the property from the parent element 
+    </pre>
+
+    <h2>CSS word -spacing property</h2>
+    <pre class="a11">
+        It is a CSS property to increases or decrases the white space between words this property can have only two values they are 
+        normal and length
+        1)Normal: it defines normal space between words which is 0.25em this is default value
+        2)length: it defines an additonal space between words negative value are also allowed
+
+    </pre>
+
+
+</body>
+</html>

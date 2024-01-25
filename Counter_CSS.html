@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        counter-reset: mycounter;
+    }
+    h4::before 
+    {
+        counter-increment: mycounter;
+        content:counter(mycounter);
+    }
+</style>
+<body>
+
+    <h1>CSS Counters</h1>
+    <pre>
+        Counters in CSS are basically variables that can be used for numbering and values of CSS counters may be incremented by CSS rules.
+
+        1)Counter-reset: It is used to reset a counter.
+        2)counter-increment: it basically increments a counter value
+        3)content: it is used to generate content 
+        4)counter() or counters() funtion:The value of a counter can be displayed using  either the counter() or counters() function
+        in a content property these two functions basically used to add the value of a counter to the element 
+
+        <b>  initialization the CSS counter</b>: to use the CSS counter property firstly it must be created with the counter-reset 
+        property and the first step is resetting the counter. The my counter by default initialized to a value 0(zero)
+        with the counter reset property 
+
+        <b>Incrementation and use of CSS counter</b>To increment the counter user CSS counter-increment property.
+
+    </pre>
+    
+    
+    <div>Happy coding </div>
+    <div class="count"> CSS counter property</div>
+    <h3>Example of automatic numbering with CSS counters</h3>
+    <h4>HTML</h4>
+    <h4>CSS</h4>
+    <h4>jquery</h4>
+    
+</body>
+</html>
