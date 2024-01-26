@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <pre>
+    The flexbox or flexible box model in CSS is a one-dimensional layout model that has flexible and efficient layouts with distributed spaces
+    among items to control their alignment structure ie it is a layout model that provides an easy and clean way to arrange item within a container
+    flexbox can be useful for ceating small scale layouts & is responsive and mobile friendly 
+
+    features of flexbox
+    @A lot of flexibilty is given
+    @arrangment & alignment of items
+    @Order & sequencing of items
+    @Bootstrap 4 is built on top of the flex layout
+
+    before the flexbox model we had 4 layout modes
+    @block: it is used to make sections in web pages
+    @Inline : it is used for text 
+    @table : it is used for dimensional table data
+    @positioned : it is used for the explicit position of an element 
+
+    There are 2 main componenets of the flexbox
+    <b>Flex container</b>: The parent div which contains various devisions is called a flex container
+    <b>flex items</b>: The items inside the container "div" are flex items
+    
+    </pre>
+    <h1>Flexbox</h1>
+
+    <style>
+        .flex_container
+        {
+            display: flex;
+            background-color: green;
+        }
+        .flex_container div
+        {
+            background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+
+    <div class="flex_container">
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+    </div>
+
+    <h2>Flexbox Axes</h2>
+
+    <pre>
+
+    while working with flexbox we deal with 2 Axes
+    @main Axis
+    @Cross Axis
+     
+    <b>main Axis</b>
+    By Default the main axis runs from left tp right 
+    @Main Start: The start of the main axis is called Main start
+    @Main size : The length between main start and main end is called main size
+    @main end : The endpoint is called main end 
+    main and cross axis
+
+    left to right 
+    @flex-direction:row;
+
+    right to left
+    @flex-direction:row reverse
+
+    top to bottom
+    flex-direction:column 
+
+    bottom to top
+    flex-direction:column-reverse 
+
+    Cross Axis:The Cross axis will be perpendicular to the main axis
+
+    <b>Cross Axis</b>: the cross Axis will be perpendicular to the main axis
+    by Default cross axis runs perpendicular to the main axis i.e from top to bottom
+
+    cross start: start of the cross axis is called cross start
+    cross size: th length between cross start and cross end is called cross size
+    cross end: the endpoint is called cross end  
+
+    </pre>
+
+    <pre>
+        <b>pre flexbox</b>A recap of some properties in CSS which might be realated to learning flexbox
+        @we have different positional properties such as absolute and relative depeding on how we want to place our element in our page
+        @floats,grids,clear fixes to help aid in the postioning
+        @fixed heights for columns(one of the main elements to create flexbox)
+
+        @flexbox is a CSS display type design to help us to craft CSS layout quite easily 
+        @control the position,Size and spacing of elements realative to their parents elements and each other
+        @they are great for responsive designing 
+        @It has its own set of properties.
+        @It defines formatting context,which controls layout
+        @It is parent-child relationship
+        
+      <b>Basic of flexbox</b>
+      Apply a display type of flexbox to the parent container this would make all the child elements in it to adjsut into the flex type and these
+      would be called the flex item this means they have become more flexible we can control how much they can shrink and how much they can grow
+      and also the spacing between these elements
+
+      @flex container can change the width,height and order of the child elements
+      @items can grow or shrink to fill the avilable space or to prevent overflow
+      @available space is distributed among the other items 
+
+    </pre>
+
+    <pre>
+        <h1>Properties of flexbox</h1>
+
+        <pre>
+        <b>Prent properties </b>
+         @display: define a flex container - flex formatting context
+         @flex-direction: defines the main axis insides the container 
+         @flex-wrap: allow flex items to wrap onto more than one line 
+         @flex-flow:shorthand for flex-direction +flex-wrap 
+         @justify-content: allow items to align along main axis
+         @align-content: allow items to align along cross axis in a single line
+         @align-items:align multiple lines of items on the cross axis
+
+         <b>Children/flex-items properties</b>
+         @Order: allows the change of order of items without altering the source order
+         @flex-grow : allows an item to fill up the abvailable free space 
+         @flex-shrink : allows an item to shrink it there is no enough free space available 
+         @flex-basis: defines the size of an item before space is distributed
+         @flex:it the shorthand for flex-grow +flex-shrink +flex-basis
+         @flex-self: has the ability to align one single item within the flex container
+        
+        </pre>
+
+
+
+    </pre>
+
+     
+    
+</body>
+</html>

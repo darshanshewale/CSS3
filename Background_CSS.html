@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a1
+    {
+        background-color: yellow;
+    }
+    .a2
+    {
+        background-image: url(20190612094854-Yuvi1\ \(1\).jpeg);
+        background-image: repeat-x;
+        color: white;
+
+        
+    }
+    .a3
+    {
+        background-image: url(20190612094854-Yuvi1\ \(1\).jpeg);
+        background-attachment: scroll;
+        color: white;
+
+       
+    }
+    .a4
+    {
+        background-image: url(20190612094854-Yuvi1\ \(1\).jpeg);
+        background-position: center;
+        
+    }
+    .a5
+    {
+        background-image: url(20190612094854-Yuvi1\ \(1\).jpeg);
+        background-origin: padding-box;
+        color: white;
+
+    }
+    .a6
+    {
+        background-image: url(20190612094854-Yuvi1\ \(1\).jpeg);
+        background-clip: border-box;
+        color: white;
+    }
+</style>
+<body>
+    <h1>CSS  Background property</h1>
+    <p>The CSS background properties are used to define the background effects for  elements there are lots of properties to design 
+        the background
+    </p>
+  
+    <h2>CSS background color property</h2>
+    <pre class="a1">
+        The background color property in CSS is used to specify the background color of an element 
+    </pre>
+
+    <h2>CSS background image property</h2>
+    <pre class="a2">
+        The background-image property is used to set one or more background image to an element by default it places the image on the top left corner
+        to specify two or more images we need to specify the separated URLs with a commma for both images
+        1)url:This specifies the URL of the image In order to specify the URL of more than one image then specated URL using a comma 
+        2)none: default value no image can be displayed
+        3)inital:its default value
+        4)inherit: form its parent element
+
+    </pre>
+
+    <h2>Background-attachment property</h2>
+    <pre class="a3">The background-attachment property in CSS is used to specify the kind of attachement of the background
+        image with respect to its container.It can be set to scroll or remain fixed. It can be applied to all HTML elements
+        1)scroll: it sets the background image to get fixed at its postion with respect to the containing element and scroll
+        with the page.It is the dafault value
+        2)fixed:This property is used to set the background image to fixed at its position with repect to the viewport
+        3)local: this property is used to set the background image to scroll along with the content of its container element
+        instead pf the page
+        4)inital: it is used to set the background-attachement property to its default value
+        5)inherit: it is used to set the property from its parent element
+    </pre>
+
+    <h2>CSS background-position property</h2>
+    <pre class="a4" >
+        The background-position property in CSS is mainly used to sets the initial postion for the background image ie it is used to set 
+        an image at a cetain  the position that is realtive to the postioning layes, can be set by using background-origin property
+        1)left top, left center, left bottom, center top, center center ,center bottom , right top , right center ,right bottom 
+    </pre>
+
+    <h2>CSS background-origin property</h2>
+    <pre class="a5">
+        The background-origin is a property defined in CSS which helps in adjusting the background image of the webpage This property 
+        is used to set the origin of the image in the bakcground by defualt this property sets the background image origin to the upper-left corner
+        of the screen
+        1)initial: setting the bakground-origin to the padding edeg in the upper left corner
+        2)padding box: this property is used to set the origin of the background image to the padding in the uperr edge corner
+        3)border-box:set the image to the border of the body of the webpage i.e the absolute upper left corner
+        4)content-box:set the origin of the background according to the content of the division/body wherever the property is being used
+        5)inherit: It is used to inherit the property from already used code else works as padding box by default
+    </pre>
+
+    <h2>CSS bakground-clip property</h2>
+    <pre class="a6">
+        The background-clip property in CSS is used to define how to extend the bakground within an element 
+        1)border-box:The border-box property is used to set the background color spread over the whole devision 
+        2)padding box: the padding box property is used to set the background inisde the border.
+        3)content-box:The content-box property is used to set the background color up to the content only
+        4)initial: It is the default value it is used to set the background color spread over the whole division
+    </pre>
+
+
+
+    
+</body>
+</html>

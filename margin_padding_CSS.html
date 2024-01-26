@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CSS Margin</h1>
+    <pre>
+        CSS Margins are used to create space around the element. We can set the different sizes of margins for individual 
+        side(top,right,bottom,left)
+
+        Margins properties can have the following values
+        @length in cm . px, ot etc
+        @width % of the element 
+        @Margin calculated by the broswer auto.
+
+        body
+        {
+            margin:value;
+        }
+        The Margin property is a shorthand property having the following individual margin properties:
+
+        margin-top:It is used to set the top margin of an element 
+        margin-right: itis used to set the right margin of an element
+        margin-bottom: it is used to set the bottom margin of an element
+        margin-left:it is used to set the left margin of an element 
+
+        <style>
+            p.all_s
+            {
+                margin: 40px 50px 10px 30px;
+            }
+            p.three_s
+            {
+                margin: 3px 10px 30px;
+            }
+            p.two_s
+            {
+                margin: 40px 50px;
+            }
+        </style>
+
+        <p class="all_s">Hello Greeks</p>
+        <p class="three_s">top right&left bottom</p>
+        <p class="two_s"> top&bottom  left&right</p>
+
+        <h1>Padding</h1>
+
+        <pre>
+        CSS padding are used to create space around the element , inside any defined border. We can set different
+        paddings for individual sides(top ,right, bottom,left).It is Important to add border properties to implement padding properties.
+
+        Padding properties can have the following values:
+        @lenght in cm,px,pt, etc
+        @width % of the element.
+
+        body 
+        {
+            padding:value;
+        }
+        Note: Padding does not allow negative property 
+
+        </pre>
+
+        <style>
+            p.p_all
+            {
+                padding: 10px 30px 49px 34px;
+            }
+            p.p_two
+            {
+                padding: 20px 50px;
+            }
+            p.p_three
+            {
+                padding: 30px 39px 44px;
+            }
+        </style>
+
+        <p class="p_all">All sides</p>
+        <p class="p_two">left&right bottom&up</p>
+        <p class="p_three">top right&left bottom</p>
+
+
+
+    </pre>
+
+
+
+</body>
+
+</html>
