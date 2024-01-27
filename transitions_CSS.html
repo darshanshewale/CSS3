@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>CSS transitions</h1>
+     <pre>
+
+        transition in CSS allow us to contorl the way in which transition takes place between teh two states of the element .The transition 
+        allows us to determine how the chnage in color takes place we can use the transition to animate the changes and make the changes
+        visually appeaking to the user and hence giving a better user experience 
+
+        The transition effect can be defined in two states (hover and active) using pseudo-clases like hover or active or classes
+        dynamically set by using javascript
+     </pre>
+
+     <h2>transition-property</h2>
+     <pre>
+        This property allows you to select the CSS properties which you want to animate during the transition
+        @none:is used to specify that no property should be selected 
+        @all is used to specify all the properties to be selected though not all properties are animate-able only the properties which 
+        are animate-able will be influenced
+        @we can specify a single property or a set of comma-sepaarted properties property1,property2..propertyN.
+     </pre>
+
+     <h2>transition Duration</h2>
+     <pre>
+        This property allows you to determine how long it will take to complete  the transition from one CSS property to the other
+        here time can be in seconds or milliseconds(ms) you should use 's' or 'ms' after the number(without quotes)
+     </pre>
+     
+     <h1>transition-timing-function</h1>
+     <pre>
+        This property allows you to determin the speed of chnage and the manner of change during the transtion like
+        the chnage should be fast at the beginning and slow at the end etc
+        transition-timing-function:
+
+        linear In this, the animation has the same speed from start to end.
+        ease-in This is similar to ease just that the end of the animation is fast.
+        ease-out This too is similar to ease just that the start of the animation is fast.
+        initial This sets the property to its default value. The initial value of this property value is ease.
+     </pre>
+
+     <h1>transition-delay</h1>
+     <pre>
+        This property allows you to determine the amount of time to wait before the transition actually starts to take place
+     </pre>
+
+     <h1>Shortand property</h1>
+     transition: property | duration | time function |delay
+
+     <style>
+        div.one
+        {
+            height: 150px;
+            width: 150px;
+            border: 3px dashed black;
+            margin: 0 auto;
+            background: pink;
+            transition: height 1s, width 1s , background-color 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+        }
+        div.one:hover
+        {
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+        }
+     </style>
+
+
+     <h1>Transition G minor </h1>
+     <div class="one"></div>
+
+
+</body>
+</html>

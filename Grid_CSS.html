@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style >
+
+    .col
+    {
+        column-count: 3;
+        column-gap: 20px;
+    }
+
+</style>
+<body>
+    <h1>CSS Grid layout Module</h1>
+    <pre>
+    The CSS grid Layout Module is used to create a grid based layout system, with the help of rows and columns it makes it easier
+    to design any webpage without using floats and positioning 
+    Note : An HTML element bacomes a gris if that element sets display:grid in style section or inline grid
+    </pre>
+    <h2>Column gap property</h2>
+    <pre>
+    The column-gap property in CSS used to specify the amount of gap between the columns in which a given text is divided using the column property
+    @length: This value specifies the length that will set the gap between the columns
+    @normal : This is the default value .This value is used to specify a normal gap between the columns 
+
+    </pre>
+
+    <div class="col">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci enim ut vero nostrum quo molestias
+             iste sed nobis corporis quidem. Animi, corrupti laborum eveniet asperiores ab sapiente! Velit, rerum expedita.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur molestias at pariatur quo voluptatem,
+             sed fugit vel assumenda quibusdam ipsam, quidem amet alias commodi sint ullam. Modi ducimus quod optio.
+        </p>
+
+    </div>
+
+    <h1>CSS gap property</h1>
+    <pre>
+    The gap property of CSS is used to set the spacing also caller gutter between the rows and columns.As like column-gap 
+    and row-gap using separately both so that one can use simple gap property that can given column as well as row gap
+    @length: the spacing is given in terms of length unit i.e rm, px etc for example gap:10px 20px
+    @percentage: The spacing is given in terms of percentage unit for example gap:50%
+    </pre>
+
+    <style>
+        .row
+        {
+            display: grid;
+            width: 500px;
+            gap: 20px 50px;
+            background-color: orange;
+        }
+        .cl 
+        {
+            background-color: green;
+            border: 1px solid black;
+            color: white;
+            width: fit-content;
+            height: 20px;
+            font-size: 20px;
+        }
+    </style>
+
+
+    <div class="row">
+        <div class="cl">Happy coding</div>
+        <div class="cl">Happy coding</div>
+        <div class="cl">Happy coding</div>
+   </div>
+   <div class="row">
+    <div class="cl">Happy coding</div>
+    <div class="cl">Happy coding</div>
+    <div class="cl">Happy coding</div>
+   </div>
+
+   <h1>CSS grid property</h1>
+   <pre>it is a CSS property that offers a grid-based layout system with rows and cloumns making it easier to design web pages without floats postioning
+   @grid template-rows/grid template columns: it is used to specifies the size of rows and columns.
+   @grid-template-areas:Iti is used to specifies the size of rows and columns
+   @grid-template-rows/grid-auto-columns:it is used to specifies the auto size(height)and sets the auto size columns
+   @grid-auto-rows/grid-template-columns: it is used to specifies the auto sizeheight and sets the auto grid size columns
+   @grid-template-rows/grid-auto-flow/grid-auto-columns: it is sued to specifies how to place iteams and auto size row and columns
+   @grid-auto-flow grid-auto-rows/grid-template-columns: it is used to specifies how to place iteams and auto size row and grid-template columns
+
+</pre>
+
+<style>
+    .g1
+    {
+        display: grid;
+        grid: auto auto/auto auto auto auto;
+        grid-gap: 10px;
+        background-color: green;
+        padding: 10px;
+    }
+    .test
+    {
+        background-color:lightgreen;
+        text-align: center;
+        padding: 25px 0;
+        font-size: 30px;
+    }
+    .g2
+    {
+        display: grid;
+        grid-template-columns: 156px 156px 156px 156px;
+        grid-template-rows:100px 200px;
+        grid-gap:5px;
+        background-color: green;
+        padding: 5px;
+    }
+    .test1
+    {
+        background-color: lightgray;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+</style>
+
+<div class="g1">
+    <div class="test">Happy coding</div>
+    <div class="test">Happy coding</div>
+    <div class="test">Happy coding</div>
+    <div class="test">Happy coding</div>
+    <div class="test">Happy coding</div>
+    <div class="test">Happy coding</div>
+    <div class="test">Happy coding</div>
+    <div class="test">Happy coding</div>
+
+</div>
+
+<div class="g2">
+    <div class="test1">Happy coding</div>
+    <div class="test1">Happy coding</div>
+    <div class="test1">Happy coding</div>
+    <div class="test1">Happy coding</div>
+    <div class="test1">Happy coding</div>
+    <div class="test1">Happy coding</div>
+    <div class="test1">Happy coding</div>
+    <div class="test1">Happy coding</div>
+
+</div>
+
+<h2>CSS grid-area property</h2>
+<pre>
+    The Grid-area property is used to set a grid item size and location in a grid layout.The grid-area property is also used to set a name
+    to grid item.
+
+    grid-area:grid-row-start|grid-column-start|grid-row-end|grid-column-end|itemname
+    @grid-row-start: it sets the row on which the item is displayed first
+    @grid-column-start : it sets the column on which the item  is displayed first 
+    @grid-row-end:it specifies the row-lines to stop displaying the item or span how many rows
+    @grid-column-end: it sets the number of columns to span 
+    @itemname: it sets a name for the grid item.
+     
+</pre>
+
+<style>
+    .item
+    {
+        grid-area: Area;
+    }
+    .area
+    {
+        display: grid;
+        grid-template-areas: 'Area Area Area';
+        grid-gap: 30px;
+        background-color: green;
+        padding: 20px;
+    }
+    .a1
+    {
+        background-color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+</style>
+
+<div class="area">
+    <div class="first_item">item1 </div>
+    <div class="a1" >item2</div>
+    <div class="a1">item3</div>
+    <div class="a1">item4</div>
+    <div class="a1">item5</div>
+    <div class="a1">item6</div>
+</div>
+
+<br>
+<style>
+    .head
+    {
+        grid-area:"headings";
+    }
+    .mar
+    {
+        grid-area:"margin";
+    }
+    .sub
+    {
+        grid-area:"subtitle";
+    }
+    .info
+    {
+        grid-area:"info";
+    }
+    .area1
+    {
+        display: grid;
+        grid-gap: 30px;
+        background-color: green;
+        padding: 20px;
+        grid-template-areas:
+        'margin heading heading heading heading heading'
+        'margin subtitle info info info info';
+    }
+</style>
+<div class="area1">
+    <div class="head">headings</div>
+    <div class="mar">margin</div>
+    <div class="sub">subtitles</div>
+    <div class="info">info</div>
+</div>
+</body>
+</html>

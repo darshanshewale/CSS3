@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <pre>
+        CSS Animation : CSS animation is a technique to chage the apperance and behaviour of various elements in web pages. It is used to control
+        the elements by changing their motions or display it has two parts one contains the CSS properties which describe the animation of the elements
+        and the other contains certain  key frammes which indicate the animation properties of the element and the specific time interval at which
+        those have to occur.
+
+        what is keyframe
+        keyframe are the foundation with the help of which CSS animation work.They define the display of the animation at the respective stages
+        of its whole duration 
+    </pre>
+
+    <h1>Animation Properties</h1>
+    <p>Animation-name: it is used  specify the name of the @keyframes decribing the animation.<p>
+
+    <h1>CSS Animation-duration property</h1>
+    <pre>
+        The Duration property in CSS is used to define how long an animation should take to completed one cycle.That is it is used to specify 
+        the duration for which animation will be played
+    </pre>
+    <h1>CSS Animation-timing-function property</h1>
+    <pre>
+        The animation-timing-funtion property in CSS used to specify how the animation makes transition through keyframes. That is it used to specify
+        the motion of animation during transition
+        Liner | ease | ease-in | ease-out|ease-in-out|step-start|step-end
+    </pre>
+
+    <h1>CSS animation-delay property</h1>
+    <pre>
+        The animation-delay property in CSS is used to specify the delay for the start of an animation The animation-delay value is defined in seconds
+        or milliseconds
+    </pre>
+   
+
+    <h1>CSS animation-iteration-count property</h1>
+    <pre>
+        The animation-iteration-count property in CSS is used to specify the number of times the animation will be repeated it can specify as infinite
+        to repeat the animation indefinitely.
+        @number : this property value is used to define the number of times an animation should be played the default value 1
+        @infinite : This property  value specifies that the animation should be played infinite times
+    
+    </pre>
+    
+    <h1>CSS Animation-direction property</h1>
+    <pre>
+        The animation-direction  property in CSS is used to define the direction of the animation The direction of animation should be
+        forward and backword or in alternate cycles
+        @Normal: This animation property plays the animation forward it is the default value
+        @reverse : This animation property plays the animation in the reverse direction 
+        @alternate : This animation property plays the animation backward first then forwards
+    </pre>
+
+    <h1>CSS animation-fill-mode property</h1>
+    <pre>
+        The animation-fill-mode property is used to specify the values that are applied by the animation before and after it is executed 
+        before playing the first key frame or after playing the last keyframe CSS animation do  not effect the element The animation-fill-mode
+        property can overide this behaviour
+    </pre>
+
+    <style>
+        div{
+            width: 200px;
+            height: 70px;
+            background: green;
+            position: relative;
+            animation: one infinite;
+            animation-delay: 2s;
+            animation-duration: 5s;
+        }
+        @keyframes one
+        {
+            from
+            {
+                left: 0px;
+                background-color: green;
+            }
+            to 
+            {
+                left: 80%;
+                background-color: orange;
+            }
+        }
+        .one
+        {
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+        }
+        @keyframes text{
+            from
+            {
+                margin-left: 60%;
+            }
+            to
+            {
+                margin-left: 0%;
+            }
+        }
+    </style>
+
+
+    <div class="one">
+        Animation-name property
+    </div>
+</body>
+</html>
