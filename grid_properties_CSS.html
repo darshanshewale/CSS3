@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+<h1>CSS grid auto columns property</h1>
+<pre>The grid-auto-columns property in CSS is used to specify the size of the coulmns of implicitly generated grid containers
+    grid-auto-columns:auto|max-content|min-contnet|length|percentage|minmax(min,max)|intial|inherits;
+    1)auto:it is default value The size is determined implicitly according to the size of the container 
+    2)length:it is used to specify the size as a percentage value
+    3)max-content:It specifies the size depending on the largest item in the container
+    4)min-content: it specifies on the smallest item in the container.
+    5)min(min,max):it specifies the size in the range of (min,max)greater than or equal to min and less than or equal to max
+    
+</pre>
+
+<style>
+    .main
+    {
+        display: grid;
+        grid-template-areas: "a a";
+        grid-gap: 20px;
+        padding: 30px;
+        background-color: green;
+        grid-auto-columns: auto;
+    }
+    .a1
+    {
+        text-align: center;
+        font-size: 30px;
+        background-color: white;
+        padding: 20px 0;
+    }
+</style>
+
+<div class="main">
+    <div class="a1">1</div>
+    <div class="a1">2</div>
+    <div class="a1">3</div>
+    <div class="a1">4</div>
+    <div class="a1">5</div>
+
+</div>
+
+
+<h1>CSS grid auto flow property</h1>
+<pre>
+    The grid-auto-flow property specifying exactly how auto-placed items get flowed into the grid 
+    grid |coulmns|row|dense|column dense
+
+</pre>
+
+<style>
+    .flow
+    {
+        height: 200px;
+        width: 200px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template: repeat(4,1fr)/repeat(2,1fr);
+        grid-auto-flow: row;
+    }
+    .b1
+    {
+        background-color: red;
+        grid-row-start: 3;
+    }
+    .b2
+    {
+        background-color: blue;
+    }
+    .b3 
+    {
+        background-color: black;
+    }
+    .b4
+    {
+        background-color: orange;
+        grid-row-start: 4;
+    }
+</style>
+
+<div class="flow">
+    <div class="b1">item1</div>
+    <div class="b2">item1</div>
+    <div class="b3">item1</div>
+    <div class="b4">item1</div>
+</div>
+
+<h2>CSS grid-auto-rows property</h2>
+<pre>
+    The grid auto-rows property in CSS is used to specify the size for the rows of implicitly generated grid containers
+    grid-auto-rows: auto|max-content|min-content|length|percentage|minmax(min,max)|initial |inherit;
+
+</pre>
+
+<style>
+    .f1
+    {
+        display: grid;
+        grid-template-areas: "a a";
+        grid-gap: 20px;
+        padding: 30px;
+        background-color: green;
+        grid-auto-rows: minmax(100px,3.5cm);
+    }
+    .a1{
+        text-align: center;
+        font-size: 30px;
+        background-color: white;
+        padding: 20px 0;
+    }
+</style>
+
+<div class="f1">
+    <div class="a1">item1</div>
+    <div class="a1">item1</div>
+    <div class="a1">item1</div>
+    <div class="a1">item1</div>
+    <div class="a1">item1</div>
+
+</div>
+
+<h1>CSS grid Columns property</h1>
+<pre>
+    Grid is a 2D design pattern to handle grid based user interfaces on the web it decribes the number of properties that allow to design of grid
+    structure and control the placement of grid items using CSS it can change the layout of grid items irrespective of their
+    source order
+
+    @auto: The element will be placed in the default flow it is the default value
+    @span n : it specifes the number of columns the item will span in grid-column-start and grid column-end in both cases
+    @column line: It describes on which column to start and display the item in case of grid-column-start and the column on which 
+    to end the display of the item for grid-column-end
+</pre>
+
+<h1>CSS grid-column-end property</h1>
+<pre>
+    The grid coulumn-end property explains the number of columns an item will span or on which column-line the item 
+    will end it supports theree different types of values 
+    @span n:it is used to specify the number of column items that will span
+    @column-line:it is used to specify on which column to end the display of the item the user can set the end of the column
+
+</pre>
+
+<h1>CSS grid-column-gap </h1>
+<pre>
+    The grid column gap property in CSS is used to set the size of the gap between the columns in a grid layout
+    @length : The size of the gap between columns is given in terms of length the value of length can be in form 
+    pf px em etc the value must be non-negative
+</pre>
+
+<h1>CSS grid-column-start property</h1>
+<pre>
+    The grid column start property defines on which column line item will start there are different values for the grid
+    -column-start property with the differnet value user can start from anywhere.
+    @span n : A keyword specifies the number of colulmn the item will span and if the names is given as a only lines with that name are 
+    counted
+    
+</pre>
+
+
+<h1>CSS grid-row-gap </h1>
+<pre>
+    The grid column gap property in CSS is used to set the size  and lcoation in a grid layout it is the combination of grid-row-start and grid-row-end property 
+    @length : The size of the gap between columns is given in terms of length the value of length can be in form 
+    pf px em etc the value must be non-negative
+</pre>
+
+<h1>CSS grid-row start property</h1>
+<pre>
+    The grid row start property in CSS is used to define the gris items start position within the grid row by specifying the inline start edge of items
+    grid area
+    grid-row-start : auto|span|row-line|initial|inherit
+     @span it sets th grid-row-start property to its default value of one row-line
+     @interger : it specifies the row on which the item starts
+</pre>
+<style>
+    .c1
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10px;
+        grid-gap: 10px;
+        grid-row-gap: 10px;
+        padding: 10px;
+        background-color: green;
+    }
+    .a
+    {
+        text-align: center;
+        font-size: 32px;
+        background-color: white;
+        padding: 20px 0;
+    }
+    .z1
+    {
+        grid-column: 1/3;
+    }
+
+    .z2
+    {
+        grid-column-end: span 3;
+    }
+    .z4
+    {
+        grid-row-start: span 2;
+
+    }
+
+</style>
+
+
+<div class="c1">
+    <div class="z1 a">item1</div>
+    <div class="z2 a">item1</div>
+    <div class="z3 a">item1</div>
+    <div class="z4 a">item1</div>
+    <div class="z5 a">item1</div>
+
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>
